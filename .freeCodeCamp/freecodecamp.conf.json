@@ -1,0 +1,25 @@
+{
+  "path": ".freeCodeCamp",
+  "scripts": {
+    "develop-course": "npm run dev:curriculum && npm run dev:server",
+    "run-course": "npm run dev:curriculum && npm run start",
+    "test": ""
+  },
+  "workspace": {
+    "previews": [
+      {
+        "open": true,
+        "url": "http://localhost:8080",
+        "timeout": 2000
+      }
+    ],
+    "terminals": [
+      {
+        "directory": ".",
+        "name": "Rust",
+        "message": "'Use me to run your code'",
+        "show": true
+      }
+    ]
+  }
+}

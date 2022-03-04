@@ -1,0 +1,31 @@
+image: gitpod/workspace-full
+
+# Commands to start on workspace startup
+tasks:
+  - init: cd .freeCodeCamp && cp sample.env .env && npm ci && npm run dev:curriculum
+    command: code --install-extension ../.devcontainer/freeCodeCamp.freecodecamp-dark-vscode-theme-0.1.0.vsix && exit
+
+ports:
+  - port: 8080
+    onOpen: open-preview
+
+vscode:
+  extensions:
+    - https://github.com/freeCodeCamp/freecodecamp-courses/raw/main/freecodecamp-courses-patch.vsix
+
+github:
+  prebuilds:
+    # enable for the default branch (defaults to true)
+    master: false
+    # enable for all branches in this repo (defaults to false)
+    branches: false
+    # enable for pull requests coming from this repo (defaults to true)
+    pullRequests: false
+    # enable for pull requests coming from forks (defaults to false)
+    pullRequestsFromForks: false
+    # add a check to pull requests (defaults to true)
+    addCheck: false
+    # add a "Review in Gitpod" button as a comment to pull requests (defaults to false)
+    addComment: false
+    # add a "Review in Gitpod" button to the pull request's description (defaults to false)
+    addBadge: false

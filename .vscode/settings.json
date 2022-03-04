@@ -1,0 +1,20 @@
+{
+  "files.exclude": {
+    ".devcontainer": true,
+    ".github": true,
+    ".vscode": true,
+    ".gitpod.yml": true,
+    "renovate.json": true,
+    ".freeCodeCamp": true,
+    ".logs": true,
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/CVS": true,
+    "Dockerfile": true,
+    "LICENSE": true
+  },
+  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "freeCodeCamp Dark Theme"
+}

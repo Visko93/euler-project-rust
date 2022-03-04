@@ -1,0 +1,12 @@
+**/*node_modules
+target
+pkg
+dist
+.env
+
+# TODO: Ignore .freeCodeCamp?
+curriculum/.freecodecamp/.bash_history
+curriculum/.freecodecamp/.cwd
+curriculum/.freecodecamp/.temp.log
+curriculum/.freecodecamp/.terminal-out.log
+curriculum/.freecodecamp/.next_command
